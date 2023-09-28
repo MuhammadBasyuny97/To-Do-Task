@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1>To Do List Application</h1>
+    <div>
+      <input type="text" id="task" placeholder="Enter the task" />
+      <input type="text" id="priority" placeholder="Enter the priority" />
+      <button id="add" onclick="add()">Add</button>
+      <button id="findMostImportantTask" onclick="sortTasks()">Sort</button>
+      <button id="remove" onclick="removeAll()">Remove Selected</button>
+    </div>
+    <table border="1">
+      <thead>
+        <th>#</th>
+        <th>Task Name</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Delete</th>
+        <th>Edit</th>
+      </thead>
+      <tbody id="body"></tbody>
+      <tfooter>
+        <tr id="footer">
+          <td colspan="4"></td>
+          <td><button onclick="saveAll()">Save All</button></td>
+        </tr>
+      </tfooter>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
